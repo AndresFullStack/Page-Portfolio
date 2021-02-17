@@ -1,0 +1,66 @@
+/*
+Generar los estilos -- orden
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales (sombras, etc)
+5. Otros
+*/
+
+:root {
+    --bitcoin-orange: #F7931A;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-color: #004778;
+}
+
+.header-menu-container {
+    position: absolute;
+    top: 25px;
+    left: calc(100% - 60px);
+    width: 25px;
+}
+
+.header-menu-container ul {
+    display: none;
+    /* display: static */
+}
+
+.header-personal-information-container {
+    width: 70%;
+    /*Si no puede medir el 70%, entonces que mida 288px y si puede medir el 70%, que lo mida
+    y si puede medir 900px, entonces los va a medir*/
+    min-width: 288px;
+    max-width: 900px;
+    text-align: start;
+    margin: 0 auto;
+}
+
+.personal-information {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
